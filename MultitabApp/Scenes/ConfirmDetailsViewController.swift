@@ -10,11 +10,13 @@ import UIKit
 class ConfirmDetailsViewController: UIViewController {
     
     // MARK: - Stored Data
+    
     private let name: String
     private let phone: String
     private let preference: String
     
     // MARK: - UI Elements
+    
     private let summaryStack = UIStackView()
     private let startOverButton = UIButton(type: .system)
     private let editPrefButton  = UIButton(type: .system)
@@ -22,6 +24,7 @@ class ConfirmDetailsViewController: UIViewController {
     private let confirmButton   = UIButton(type: .system)
     
     // MARK: - Init
+    
     init(name: String, phone: String, preference: String) {
         self.name       = name
         self.phone      = phone
@@ -31,18 +34,20 @@ class ConfirmDetailsViewController: UIViewController {
     required init?(coder: NSCoder) { fatalError("init(coder:) not supported") }
     
     // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Confirm Details"
         navigationItem.hidesBackButton = true
-
+        
         configureSummary()
         configureButtons()
         layoutViews()
     }
     
     // MARK: - Configuration
+    
     private func configureSummary() {
         summaryStack.axis      = .vertical
         summaryStack.spacing   = 12
@@ -116,6 +121,7 @@ class ConfirmDetailsViewController: UIViewController {
     }
     
     // MARK: - Actions
+    
     @objc private func didTapStartOver() {
         if let onboardingNav = tabBarController?.viewControllers?.first as? UINavigationController,
            let onboardingVC  = onboardingNav.viewControllers.first as? OnboardingViewController {

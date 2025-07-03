@@ -10,7 +10,7 @@ import UIKit
 class PersonalInfoViewController: UIViewController {
     
     // MARK: - UI Elements
-
+    
     private let nameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter your name"
@@ -109,7 +109,7 @@ class PersonalInfoViewController: UIViewController {
         let prefsVC = PreferencesViewController(onboardingData: data)
         navigationController?.pushViewController(prefsVC, animated: true)
     }
-
+    
     
     private func presentConfirmationAlert() {
         let name  = nameTextField.text ?? ""

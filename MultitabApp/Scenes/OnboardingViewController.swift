@@ -8,6 +8,9 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
+    
+    // MARK: - UI Elements
+    
     private let startButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Start", for: .normal)
@@ -18,12 +21,14 @@ class OnboardingViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Welcome"
-
+        
         view.addSubview(startButton)
         NSLayoutConstraint.activate([
             startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -31,16 +36,20 @@ class OnboardingViewController: UIViewController {
             startButton.widthAnchor.constraint(equalToConstant: 140),
             startButton.heightAnchor.constraint(equalToConstant: 50)
         ])
-
+        
         startButton.addTarget(self,
                               action: #selector(didTapStart),
                               for: .touchUpInside)
     }
-
+    
+    // MARK: - Actions
+    
     @objc private func didTapStart() {
         let personalInfoVC = PersonalInfoViewController()
         navigationController?.pushViewController(personalInfoVC, animated: true)
     }
+    
+    // MARK: - Public Methods
     
     func configureForRestart() {
         startButton.setTitle("Restart", for: .normal)

@@ -7,17 +7,24 @@
 
 import UIKit
 
-import UIKit
-
 class PreferencesViewController: UIViewController {
     
+    // MARK: - Properties
+    
     private var onboardingData: OnboardingData
+    private var selectedPreference: String? {
+        didSet {
+            choiceLabel.text = selectedPreference ?? "No preference selected"
+        }
+    }
+    
+    // MARK: - Init
     
     init(onboardingData: OnboardingData) {
         self.onboardingData = onboardingData
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) { fatalError() }
     
     // MARK: - UI Elements
@@ -42,14 +49,6 @@ class PreferencesViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
-    // MARK: - State
-    
-    private var selectedPreference: String? {
-        didSet {
-            choiceLabel.text = selectedPreference ?? "No preference selected"
-        }
-    }
     
     // MARK: - Lifecycle
     
@@ -120,7 +119,6 @@ class PreferencesViewController: UIViewController {
         
         present(sheet, animated: true)
     }
-
     
 }
 
