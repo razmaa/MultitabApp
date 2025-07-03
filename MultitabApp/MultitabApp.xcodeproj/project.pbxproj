@@ -14,6 +14,10 @@
 		1504F9482E15C27A0019F928 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F9472E15C27A0019F928 /* ProfileViewController.swift */; };
 		1504F94A2E15C2860019F928 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F9492E15C2860019F928 /* EditProfileViewController.swift */; };
 		1504F94C2E15C2C70019F928 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F94B2E15C2C70019F928 /* Tabbar.swift */; };
+		1504F94E2E15E7660019F928 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F94D2E15E7660019F928 /* PersonalInfoViewController.swift */; };
+		1504F9502E15E8490019F928 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F94F2E15E8480019F928 /* PreferencesViewController.swift */; };
+		1504F9522E15E9150019F928 /* ConfirmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F9512E15E9150019F928 /* ConfirmDetailsViewController.swift */; };
+		1504F9552E15EA020019F928 /* PersonalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F9542E15EA020019F928 /* PersonalDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1504F9472E15C27A0019F928 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1504F9492E15C2860019F928 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		1504F94B2E15C2C70019F928 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		1504F94D2E15E7660019F928 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		1504F94F2E15E8480019F928 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		1504F9512E15E9150019F928 /* ConfirmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDetailsViewController.swift; sourceTree = "<group>"; };
+		1504F9542E15EA020019F928 /* PersonalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			children = (
 				1504F9282E159ACE0019F928 /* MultitabApp */,
 				1504F9442E15C2340019F928 /* Scenes */,
+				1504F9532E15E9D10019F928 /* Model */,
 				1504F9272E159ACE0019F928 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,10 +81,21 @@
 			isa = PBXGroup;
 			children = (
 				1504F9452E15C2620019F928 /* OnboardingViewController.swift */,
+				1504F94D2E15E7660019F928 /* PersonalInfoViewController.swift */,
+				1504F94F2E15E8480019F928 /* PreferencesViewController.swift */,
+				1504F9512E15E9150019F928 /* ConfirmDetailsViewController.swift */,
 				1504F9472E15C27A0019F928 /* ProfileViewController.swift */,
 				1504F9492E15C2860019F928 /* EditProfileViewController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1504F9532E15E9D10019F928 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1504F9542E15EA020019F928 /* PersonalDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +170,13 @@
 				1504F92A2E159ACE0019F928 /* AppDelegate.swift in Sources */,
 				1504F9462E15C2620019F928 /* OnboardingViewController.swift in Sources */,
 				1504F9482E15C27A0019F928 /* ProfileViewController.swift in Sources */,
+				1504F9502E15E8490019F928 /* PreferencesViewController.swift in Sources */,
 				1504F94C2E15C2C70019F928 /* Tabbar.swift in Sources */,
+				1504F94E2E15E7660019F928 /* PersonalInfoViewController.swift in Sources */,
 				1504F94A2E15C2860019F928 /* EditProfileViewController.swift in Sources */,
+				1504F9522E15E9150019F928 /* ConfirmDetailsViewController.swift in Sources */,
 				1504F92C2E159ACE0019F928 /* SceneDelegate.swift in Sources */,
+				1504F9552E15EA020019F928 /* PersonalDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
